@@ -1,0 +1,70 @@
+@use "../abstracts/" as *;
+
+.card {
+  background-image: url(../../asset/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  color: $color-neutral-white;
+  display: flex;
+  justify-content: flex-end;
+
+  &__container {
+    max-width: 30rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  &__front {
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    background-image: url(../../asset/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+
+  &__back {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    background-image: url(../../asset/images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 198px;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    width: 60px;
+  }
+
+  &__number {
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+  }
+
+  &__info-row {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+}

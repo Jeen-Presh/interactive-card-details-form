@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: 1.5;
+}

@@ -26,18 +26,24 @@
   <body>
     <main>
       <section class="card">
-        <div class="card__front">
-          <div class="logo-wrapper">
-            <img src="/asset/images/card-logo.svg" alt="Card logo" />
+        <div class="card__container">
+          <div class="card__front">
+            <div class="logo-wrapper mb-12">
+              <img
+                src="/asset/images/card-logo.svg"
+                class="card__logo"
+                alt="Card logo"
+              />
+            </div>
+            <p class="card__number mb-4">0000 0000 0000 0000</p>
+            <div class="card__info-row">
+              <p class="card__name">Jane Appleseed</p>
+              <p class="card__expiry-date">00/00</p>
+            </div>
           </div>
-          <p class="card__number">0000 0000 0000 0000</p>
-          <div class="card__info-row">
-            <p class="card__name"></p>
-            <p class="card__expiry-date"></p>
+          <div class="card__back">
+            <p class="card__cvc"></p>
           </div>
-        </div>
-        <div class="card__back">
-          <p class="card__cvc"></p>
         </div>
       </section>
 

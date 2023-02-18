@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -70,6 +77,76 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-image: url(../../asset/images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: flex-end;
+}
+.card__container {
+  max-width: 30rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.card__front {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  background-image: url(../../asset/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.card__back {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  background-image: url(../../asset/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 198px;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.card__logo {
+  width: 60px;
+}
+.card__number {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+}
+.card__info-row {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */
